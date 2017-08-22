@@ -1,0 +1,251 @@
+[33mcommit e013f52873d1441a1b4ede979bc953d19f0f6296[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Sat Aug 12 23:57:26 2017 +0800
+
+    README: update LOs to refer to se-book
+
+[33mcommit ff94fca6ff83e9c8a75f378074fdd6555ac911e7[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Sat Aug 5 19:45:52 2017 +0800
+
+    README: add more details to the setup and testing instructions
+
+[33mcommit 8743c6a866c92ac847799167f17b09a50d3d6831[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Sat Aug 5 19:44:56 2017 +0800
+
+    README: refine first half of learning outcomes to refer to the se-book
+
+[33mcommit ca4f4fcdf19d59d4cee94f8cea08ad9a9a80351c[m
+Author: Miao Ling <limmlingg@gmail.com>
+Date:   Thu Jul 27 12:27:11 2017 +0800
+
+    [#87] Remove Eclipse project files (#88)
+    
+    As we have moved to IntelliJ, the Eclipse project files are no longer
+    needed.
+    
+    Let's remove these files/folders:
+    * .classpath
+    * .project
+    * .settings/*
+    * docs/*.pptx
+
+[33mcommit 8c6fd8a571d3f4f8ccd5aaf321e7e4eb1c9fce7d[m
+Author: Miao Ling <limmlingg@gmail.com>
+Date:   Fri Jul 21 16:37:21 2017 +0800
+
+    [#83] Contributors and Contact: point to same section in se-edu (#86)
+    
+    These sections can be found in se-edu. There is no need to duplicate
+    them here.
+    
+    Let's make these sections point to the respective sections in se-edu.
+
+[33mcommit a894d3fd42492288072420720536031398c4bc75[m
+Author: Miao Ling <limmlingg@gmail.com>
+Date:   Thu Jul 20 16:04:50 2017 +0800
+
+    Convert README.md from Eclipse to IntelliJ (#85)
+
+[33mcommit a4515e3895ca1af1fc7c1753dec0a90c37366032[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Sat Apr 1 13:21:34 2017 +0800
+
+    Set theme jekyll-theme-cayman
+
+[33mcommit 19b1da19e1dba12e0707d04574c12c90a46c64d9[m
+Author: Akshay Narayan <okkhoy@gmail.com>
+Date:   Mon Jan 23 14:17:06 2017 +0800
+
+    [#63] add additional option for LO-1KLoC (#63)
+
+[33mcommit c7a1d33365ddfc57ea21f852eaadd782eb923ab8[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Thu Jan 19 14:19:40 2017 +0800
+
+    Fix link to java coding standard
+
+[33mcommit fcc648ee603057d27581f6c4f3de0bbe68bd496d[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Sun Jan 1 20:55:41 2017 +0800
+
+    Remove space before colon
+
+[33mcommit 47c7da07e92eefdaf8a5fc262094572a1ba171f5[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Sun Jan 1 20:53:35 2017 +0800
+
+    Raise level of exercise headings
+
+[33mcommit 38be8c7887c8ff059084d4df7848aa33fa390301[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Sun Jan 1 20:49:07 2017 +0800
+
+    Fix cosmetic issues of learning outcomes
+
+[33mcommit 79e3c3bb0a31273908796c09e5faabb532c9ab22[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Sun Dec 25 19:57:24 2016 +0800
+
+    [#7] Add a design description to the developer guide
+    
+    Fixes #7
+
+[33mcommit a06d790415edde6e3d1b729f928d95c3820dea75[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Sun Dec 25 19:40:24 2016 +0800
+
+    Refine ToC
+
+[33mcommit f4fc356d57304032eb1a52ec0a0ff093b9307850[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Sun Dec 25 19:33:39 2016 +0800
+
+    Add LO for method abstraction
+
+[33mcommit 0465535d35e467e6e78a9a7346c2a5556e820650[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Sun Dec 25 12:21:18 2016 +0800
+
+    Change scope of private members from public to private
+
+[33mcommit dff416d21ff0dbfe376c533af94a72f02746eb72[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Sun Dec 25 12:13:48 2016 +0800
+
+    Remove compiler warning in getLinesInFile(String filePath)
+
+[33mcommit 592b3ab6d21b698db97c1312f2edea437d7251f9[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Sun Dec 25 12:10:23 2016 +0800
+
+    Remove unused method deletePersonFromAddressBook(int index)
+
+[33mcommit ef201a01725eaa26bdfd003bf5bb079d3f724446[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Sun Dec 25 12:09:27 2016 +0800
+
+    Remove compiler warning in splitByWhitespace(String toSplit)
+
+[33mcommit 51ada3c5fcccafb60ef7b8bcd72199bbc551eeab[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Sun Dec 25 12:04:49 2016 +0800
+
+    Remove redundant method getLatestPersonListingView()
+
+[33mcommit a93bb237cfb0860d5efc8d81a4bce5b8c6ed9122[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Sun Dec 25 12:04:12 2016 +0800
+
+    Refine method header comments to follow coding style
+
+[33mcommit 66c2d59e6b0863e65654a598646daeb8bd35a50f[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Sun Dec 25 11:36:00 2016 +0800
+
+    Fix outdated comment in isValidFilePath
+
+[33mcommit a5461870e3795d934b9cf44aba36abe3ebf72d69[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Sun Dec 25 11:00:03 2016 +0800
+
+    Refine NOTE comments
+
+[33mcommit 6954c21746fb558eb760d506b7c9468defa98d08[m
+Author: brandonyeoxg <brandonyeoxg@gmail.com>
+Date:   Fri Dec 23 22:19:31 2016 +0800
+
+    [#61] Update user guide for changing the save location (#62)
+    
+    * Update user guide to reflect the new implementation of isValidFilePath.
+    
+    * Fix formatting error for changing save location in user guide.
+    
+    * Fix formatting error for changing save location in user guide.
+    
+    * Fix formatting error for changing save location in user guide.
+    
+    Fix formatting error for changing save location in user guide.
+    
+    Fix formatting for user guide change save location.
+    
+    * Slight edit for user guide on changing the save location.
+    
+    * Improve clarity of 'regular' file.
+    
+    * Update regular file explanation.
+
+[33mcommit f51ffeb9b0b584df1a6b704e56aaddeb973808db[m
+Author: brandonyeoxg <brandonyeoxg@gmail.com>
+Date:   Mon Dec 19 16:21:15 2016 +0800
+
+    [#55] Implement a more rigorous validity check for file path (#56)
+
+[33mcommit 800290bf7008520c1e713058fa9e0eb265daac53[m
+Author: Thenaesh Elango <thenaeshelango@gmail.com>
+Date:   Sun Dec 11 10:44:14 2016 +0800
+
+    [#4] Convert coding best practices into a markdown document (#60)
+
+[33mcommit 668413ca452bb7307d5ec219e95fd4f96fe803df[m
+Author: Huang Chao <huangchao0825@gmail.com>
+Date:   Fri Dec 9 16:46:59 2016 +0800
+
+    [#5] Add level2 headings to table of contents (#58)
+
+[33mcommit c72e691709e3095578f6138c68c9cebd28dbb5c1[m
+Author: Huang Chao <huangchao0825@gmail.com>
+Date:   Fri Dec 9 14:30:57 2016 +0800
+
+    [#3] Use a generic link for the coding standard (#59)
+
+[33mcommit 24f72417815023aa7459fdab4620c95d0e6313fc[m
+Author: Akshay Narayan <okkhoy@gmail.com>
+Date:   Wed Aug 24 12:02:53 2016 +0800
+
+    Added line in test\runtests.bat to create bin directory if it doesn't exist on windows. (#23)
+
+[33mcommit a2c90b73921c84a7fe944e33fca05fa14da6e5a0[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Sat Aug 20 15:29:22 2016 +0800
+
+    Use correct phrasing for example commit message
+
+[33mcommit 54cf7c43346f6a6b71d6492a900eba2d406bdc8c[m
+Author: Wang Leng Tan <tanwangleng@outlook.com>
+Date:   Sat Aug 20 11:41:46 2016 +0800
+
+    [16][LO-Refactor] refers to the same learning outcome twice
+
+[33mcommit 3a8c7e8c5f0b8490afd104bb715507b436aa098b[m
+Author: Zhang Yi Jiang <mediumdeviation@gmail.com>
+Date:   Tue Aug 16 12:04:44 2016 +0800
+
+    [3] cd to script directory in runtests.sh and fix typo
+    
+    The script will not run properly otherwise if run from outside
+    the /tests directory.
+
+[33mcommit 1ec0bbf2bd7155c6de9baf2a5eed47a45328a8a8[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Sun Aug 14 13:29:58 2016 +0800
+
+    Fix 2nd broken link to coding best practices
+    Fixes #14
+
+[33mcommit 68467674ff11a4d36321647819c24600c9566efa[m
+Author: Damith C. Rajapakse <damith@gmail.com>
+Date:   Sun Aug 14 13:27:03 2016 +0800
+
+    Fix broken link to coding best practices
+    Fixes #14
+
+[33mcommit 1a8e61c0e7ccdd2fd8311c224f843ed48f156c8a[m
+Author: Wei Kang <weikangchia@gmail.com>
+Date:   Sat Aug 13 16:21:30 2016 +0800
+
+    [13] Add missing data type to README.md
+
+[33mcommit 150cec80a47a1488456488d5e2be4dc9c27a26f0[m[33m ([m[1;33mtag: v1.1[m[33m)[m
+Author
