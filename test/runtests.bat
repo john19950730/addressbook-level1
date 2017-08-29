@@ -23,3 +23,6 @@ java -classpath ..\bin seedu.addressbook.AddressBook < input.txt >> actual.txt
 
 REM compare the output to the expected output
 FC actual.txt expected.txt
+
+REM pause so that result can be seen
+pause

@@ -54,6 +54,8 @@
   # matching should be case-sensitive
   find betsy
 
+  # find unique number
+  find 11111
   # find unique keyword
   find Betsy
   # find multiple with same keyword

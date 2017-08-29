@@ -434,15 +434,30 @@ public class AddressBook {
     }
 
     /**
-     * Finds and lists all persons in address book whose name contains any of the argument keywords.
+     * Finds and lists all persons in address book whose name contains any of the argument keywords,
+     * or phone number contains all the digits specified in sequence.
      * Keyword matching is case sensitive.
      *
      * @param commandArgs full command args string from the user
      * @return feedback display message for the operation result
      */
     private static String executeFindPersons(String commandArgs) {
-        final Set<String> keywords = extractKeywordsFromFindPersonArgs(commandArgs);
-        final ArrayList<HashMap<String, String>> personsFound = getPersonsWithNameContainingAnyKeyword(keywords);
+        final ArrayList<HashMap<String, String>> personsFound;
+        int phoneNumberDigits;
+        //attempt to convert arguments given to number first
+        // and if conversion is possible search by the phone number instead
+        try {
+            phoneNumberDigits = Integer.parseInt(commandArgs);
+        } catch (NumberFormatException conversionToIntFailed) {
+            phoneNumberDigits = -1;
+        }
+
+        if (phoneNumberDigits == -1) {
+            final Set<String> keywords = extractKeywordsFromFindPersonArgs(commandArgs);
+            personsFound = getPersonsWithNameContainingAnyKeyword(keywords);
+        } else
+            personsFound = getPersonsWithPhoneNumberContainingNumber(phoneNumberDigits);
+
         showToUser(personsFound);
         return getMessageForPersonsDisplayedSummary(personsFound);
     }
@@ -478,6 +493,23 @@ public class AddressBook {
         for (HashMap<String, String> person : getAllPersonsInAddressBook()) {
             final Set<String> wordsInName = new HashSet<>(splitByWhitespace(getNameFromPerson(person)));
             if (!Collections.disjoint(wordsInName, keywords)) {
+                matchedPersons.add(person);
+            }
+        }
+        return matchedPersons;
+    }
+
+    /**
+     * Retrieves all persons whose phone number contain all digits specified in order
+     *
+     * @param searchTerm for searching
+     * @return list of persons in full model with phone number containing all digits specified in order
+     */
+
+    private static ArrayList<HashMap<String, String>> getPersonsWithPhoneNumberContainingNumber(int searchTerm) {
+        final ArrayList<HashMap<String, String>> matchedPersons = new ArrayList<>();
+        for (HashMap<String, String> person : getAllPersonsInAddressBook()) {
+            if (getPhoneFromPerson(person).contains(searchTerm + "")) {
                 matchedPersons.add(person);
             }
         }
