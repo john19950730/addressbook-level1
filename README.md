@@ -83,9 +83,10 @@ Format: `list`
 #### Finding a person by keyword `find`
 > Finds persons that match given keywords
 
-Format: `find KEYWORD [MORE_KEYWORDS]`  
+Format: `find KEYWORD [MORE_KEYWORDS / NUMBER]`  
 > The search is case sensitive, the order of the keywords does not matter, only the name is searched, 
-and persons matching at least one keyword will be returned (i.e. `OR` search).
+and persons matching at least one keyword will be returned (i.e. `OR` search). <br>
+If a number is specified as the keyword, all users with phone numbers containing every digit in sequence will be returned.
 
 Examples: 
 * `find John`
@@ -93,6 +94,9 @@ Examples:
    
 * `find Betsy Tim John`
   > Returns Any person having names `Betsy`, `Tim`, or `John`
+  
+* `find 684`
+  > Returns Any person having a phone number that contains `684` anywhere in the number.
 
 #### Deleting a person: `delete`
 
