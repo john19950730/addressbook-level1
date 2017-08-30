@@ -94,6 +94,9 @@ Examples:
    
 * `find Betsy Tim John`
   > Returns Any person having names `Betsy`, `Tim`, or `John`
+  
+* `find 684`
+  > Returns Any person having a phone number that contains `684` anywhere in the number.
 
 #### Deleting a person: `delete`
 
