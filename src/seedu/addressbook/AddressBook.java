@@ -103,7 +103,7 @@ public class AddressBook {
                                         + "keywords (case-sensitive) or whose phone numbers contain all of the digits specified in sequence "
 					+ "and displays them as a list with index numbers.";
     private static final String COMMAND_FIND_PARAMETERS = "KEYWORD [MORE_KEYWORDS / NUMBER]";
-    private static final String COMMAND_FIND_EXAMPLE = COMMAND_FIND_WORD + " alice bob charlie" + "\n"
+    private static final String COMMAND_FIND_EXAMPLE = COMMAND_FIND_WORD + " alice bob charlie" + " OR "
 					+ COMMAND_FIND_WORD + " 12345";
 
     private static final String COMMAND_LIST_WORD = "list";
